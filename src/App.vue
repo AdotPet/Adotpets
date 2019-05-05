@@ -119,8 +119,6 @@
 </template>
 
 <script>
-import jQuery from "jquery";
-
 export default {
   name: "app",
   data() {
