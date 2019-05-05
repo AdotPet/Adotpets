@@ -1,0 +1,5 @@
+<template>
+  <div class="about">
+    <h1>Página de favoritos</h1>
+  </div>
+</template>
