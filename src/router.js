@@ -8,6 +8,7 @@ import Mensagens from "./views/Mensagens.vue";
 import Busca from "./views/Busca.vue";
 import minhaConta from "./views/minhaConta.vue";
 import Dicas from "./views/Dicas.vue";
+import Login from "./views/Login.vue";
 
 Vue.use(Router);
 
@@ -54,6 +55,11 @@ export default new Router({
       path: "/dicas",
       name: "dicas",
       component: Dicas
+    },
+    {
+      path: "/login",
+      name: "login",
+      component: Login
     },
     {
       path: "/sobreNos",
