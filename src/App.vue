@@ -6,9 +6,7 @@
     </div>
   </div>-->
   <div id="app">
-    <nav
-      class="flex items-center justify-between flex-wrap bg-indigo p-4 shadow"
-    >
+    <nav class="flex items-center justify-between flex-wrap bg-indigo p-4 shadow">
       <div class="flex items-center flex-no-shrink text-white mr-6">
         <router-link to="/">
           <svg
@@ -21,12 +19,7 @@
           >
             <rect width="85" height="30" fill="url(#pattern0)"></rect>
             <defs>
-              <pattern
-                id="pattern0"
-                patternContentUnits="objectBoundingBox"
-                width="1"
-                height="1"
-              >
+              <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
                 <use
                   xlink:href="#image0"
                   transform="translate(0 -0.000841751) scale(0.010101 0.0286195)"
@@ -44,107 +37,82 @@
       </div>
       <div class="block lg:hidden">
         <button
-          @click="toggle"
           class="flex items-center px-3 py-2 border rounded text-teal-lighter border-teal-light hover:text-white hover:border-white"
         >
-          <svg
-            class="fill-current h-3 w-3"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
             <title>Menu</title>
             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
           </svg>
         </button>
       </div>
-      <div :class="{ hidden: toggleMenu }" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+      <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
         <div class="text-sm lg:flex-grow">
-          <router-link
-            to="adotar"
-            class="block mt-4 lg:inline-block lg:mt-0 text-blue-dark no-underline bg-white rounded shadow p-2 hover:bg-blue-lighter hover:text-white mr-4"
-            >Quero adotar</router-link
-          >
           <router-link
             to="doar"
             class="block mt-4 lg:inline-block lg:mt-0 text-blue-dark no-underline bg-white rounded shadow p-2 hover:bg-blue-lighter hover:text-white mr-4"
-            >Quero doar</router-link
-          >
+          >Quero doar</router-link>
+          <router-link
+            to="adotar"
+            class="block mt-4 lg:inline-block lg:mt-0 text-blue-dark no-underline bg-white rounded shadow p-2 hover:bg-blue-lighter hover:text-white mr-4"
+          >Quero adotar</router-link>
           <router-link
             to="favoritos"
             class="block mt-4 lg:inline-block lg:mt-0 text-blue-dark no-underline bg-white rounded shadow p-2 hover:bg-blue-lighter hover:text-white mr-4"
-            >Favoritos</router-link
-          >
+          >Favoritos</router-link>
           <router-link
             to="chat"
             class="block mt-4 lg:inline-block lg:mt-0 text-blue-dark no-underline bg-white rounded shadow p-2 hover:bg-blue-lighter hover:text-white mr-4"
-            >Mensagens</router-link
-          >
+          >Mensagens</router-link>
           <router-link
             to="busca"
             class="block mt-4 lg:inline-block lg:mt-0 text-blue-dark no-underline bg-white rounded shadow p-2 hover:bg-blue-lighter hover:text-white mr-4"
-            >Busca</router-link
-          >
+          >Busca</router-link>
           <router-link
             to="minhaConta"
             class="block mt-4 lg:inline-block lg:mt-0 text-blue-dark no-underline bg-white rounded shadow p-2 hover:bg-blue-lighter hover:text-white mr-4"
-            >Minha conta</router-link
-          >
+          >Minha conta</router-link>
           <router-link
             to="dicas"
             class="block mt-4 lg:inline-block lg:mt-0 text-blue-dark no-underline bg-white rounded shadow p-2 hover:bg-blue-lighter hover:text-white mr-4"
-            >Dicas</router-link
-          >
+          >Dicas</router-link>
           <router-link
             to="sobreNos"
             class="block mt-4 lg:inline-block lg:mt-0 text-blue-dark no-underline bg-white rounded shadow p-2 hover:bg-blue-lighter hover:text-white mr-4"
-            >Sobre nós</router-link
-          >
+          >Sobre nós</router-link>
         </div>
         <div>
           <router-link
             to="login"
-            class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal hover:bg-white mt-4 lg:mt-0 no-underline pr-4"
-            ><i class="fas fa-arrow-alt-circle-right"><span class="pl-2">Entrar</span></i></router-link
-          >
+            class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal hover:bg-white mt-4 lg:mt-0 no-underline"
+          >Entrar</router-link>
         </div>
       </div>
     </nav>
 
     <!-- Seção sem reload -->
 
-    <router-view />
+    <router-view/>
 
     <!-- Fim da Seção sem reload -->
   </div>
 </template>
 
-<script>
-import jQuery from "jquery";
-
-export default {
-  name: "app",
-  data() {
-    return {
-      toggleMenu: true
-    }
-  },
-  methods: {
-    toggle() {
-      this.toggleMenu = !this.toggleMenu
-    }
-  }
-};
-</script>
-
 <style lang="scss">
 #app {
-  font-family: 'ABeeZee', sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
 }
-img {
-  object-fit: cover;
+#nav {
+  padding: 30px;
+  a {
+    font-weight: bold;
+    color: #2c3e50;
+    &.router-link-exact-active {
+      color: #42b983;
+    }
+  }
 }
 </style>

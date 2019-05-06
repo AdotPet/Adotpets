@@ -1,9 +1,9 @@
 <template>
   <div>
-    <Carrousel />
-    <Destaques />
-    <Dogs />
-    <Cats />
+    <Carrousel/>
+    <Destaques/>
+    <Dogs/>
+    <Cats/>
   </div>
 </template>
 
