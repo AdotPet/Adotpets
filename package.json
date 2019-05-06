@@ -29,6 +29,7 @@
     "prettier": "^1.17.0",
     "sass-loader": "^7.1.0",
     "tailwindcss": "^0.7.4",
-    "vue-template-compiler": "^2.5.21"
+    "vue-template-compiler": "^2.5.21",
+    "vue2-slideout-panel": "^2.2.3"
   }
 }

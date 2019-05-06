@@ -57,6 +57,11 @@
       >
         <div class="text-sm lg:flex-grow">
           <router-link
+            to="/"
+            class="block mt-4 lg:inline-block lg:mt-0 text-blue-dark no-underline bg-white rounded shadow p-2 hover:bg-blue-lighter hover:text-white mr-4"
+            ><i class="fas fa-home"></i
+          ></router-link>
+          <router-link
             to="adotar"
             class="block mt-4 lg:inline-block lg:mt-0 text-blue-dark no-underline bg-white rounded shadow p-2 hover:bg-blue-lighter hover:text-white mr-4"
             >Quero adotar</router-link
@@ -71,7 +76,7 @@
             class="block mt-4 lg:inline-block lg:mt-0 text-blue-dark no-underline bg-white rounded shadow p-2 hover:bg-blue-lighter hover:text-white mr-4"
             >Favoritos</router-link
           >
-          <router-link
+          <!-- <router-link
             to="chat"
             class="block mt-4 lg:inline-block lg:mt-0 text-blue-dark no-underline bg-white rounded shadow p-2 hover:bg-blue-lighter hover:text-white mr-4"
             >Mensagens</router-link
@@ -85,7 +90,7 @@
             to="minhaConta"
             class="block mt-4 lg:inline-block lg:mt-0 text-blue-dark no-underline bg-white rounded shadow p-2 hover:bg-blue-lighter hover:text-white mr-4"
             >Minha conta</router-link
-          >
+          > -->
           <router-link
             to="dicas"
             class="block mt-4 lg:inline-block lg:mt-0 text-blue-dark no-underline bg-white rounded shadow p-2 hover:bg-blue-lighter hover:text-white mr-4"
@@ -97,7 +102,7 @@
             >Sobre nós</router-link
           >
         </div>
-        <div>
+        <div @click="toggleLoginPopup">
           <router-link
             to="login"
             class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal hover:bg-white mt-4 lg:mt-0 no-underline pr-4"
@@ -122,12 +127,17 @@ export default {
   name: "App",
   data() {
     return {
-      toggleMenu: true
+      toggleMenu: true,
+      toggleLogin: true
     };
   },
   methods: {
     toggle() {
       this.toggleMenu = !this.toggleMenu;
+    },
+    toggleLoginPopup() {
+      console.log("Fui clicado");
+      this.toggleLogin = !this.toggleLogin;
     }
   }
 };
