@@ -6,9 +6,9 @@
       <div class="flex flex-wrap -mx-1 lg:-mx-4">
         <!-- Column -->
         <div
-          class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3"
           v-for="pet in Pets"
           :key="pet.id"
+          class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3"
         >
           <!-- Article -->
           <article class="overflow-hidden rounded-lg shadow-lg bg-white">
@@ -78,7 +78,6 @@ export default {
   },
   created() {
     const API_KEY = "522bf9a7-6e06-4966-a659-056c77e8a576";
-    const UserID = "nz082y";
 
     var config = {
       headers: {
@@ -88,7 +87,7 @@ export default {
     axios
       .get(
         "https://api.thedogapi.com/v1/images/search?size=small&limit=3",
-        this.config
+        config
       )
       .then(res => (this.Pets = res.data));
   }

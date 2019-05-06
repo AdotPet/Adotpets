@@ -6,9 +6,9 @@
       <div class="flex flex-wrap -mx-1 lg:-mx-4">
         <!-- Column -->
         <div
-          class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4"
           v-for="pet in Pets"
           :key="pet.id"
+          class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4"
         >
           <!-- Article -->
           <article
@@ -23,7 +23,7 @@
             >
               <h1 class="text-lg">
                 <a
-                  class="no-underline hover:underline text-indigo"
+                  :class="['no-underline', 'hover:underline', 'text-indigo']"
                   href="#"
                 >
                   {{ pet.id }}</a
