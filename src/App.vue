@@ -1,10 +1,4 @@
 <template>
-  <!-- <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-  </div>-->
   <div id="app">
     <nav
       class="flex items-center justify-between flex-wrap bg-indigo p-4 shadow"
@@ -44,8 +38,8 @@
       </div>
       <div class="block lg:hidden">
         <button
-          @click="toggle"
           class="flex items-center px-3 py-2 border rounded text-teal-lighter border-teal-light hover:text-white hover:border-white"
+          @click="toggle"
         >
           <svg
             class="fill-current h-3 w-3"
@@ -57,7 +51,10 @@
           </svg>
         </button>
       </div>
-      <div :class="{ hidden: toggleMenu }" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+      <div
+        :class="{ hidden: toggleMenu }"
+        class="w-full block flex-grow lg:flex lg:items-center lg:w-auto"
+      >
         <div class="text-sm lg:flex-grow">
           <router-link
             to="adotar"
@@ -104,7 +101,9 @@
           <router-link
             to="login"
             class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal hover:bg-white mt-4 lg:mt-0 no-underline pr-4"
-            ><i class="fas fa-arrow-alt-circle-right"><span class="pl-2">Entrar</span></i></router-link
+            ><i class="fas fa-arrow-alt-circle-right"
+              ><span class="pl-2">Entrar</span></i
+            ></router-link
           >
         </div>
       </div>
@@ -120,15 +119,15 @@
 
 <script>
 export default {
-  name: "app",
+  name: "App",
   data() {
     return {
       toggleMenu: true
-    }
+    };
   },
   methods: {
     toggle() {
-      this.toggleMenu = !this.toggleMenu
+      this.toggleMenu = !this.toggleMenu;
     }
   }
 };
@@ -136,7 +135,7 @@ export default {
 
 <style lang="scss">
 #app {
-  font-family: 'ABeeZee', sans-serif;
+  font-family: "ABeeZee", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

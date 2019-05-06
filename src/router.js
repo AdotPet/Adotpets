@@ -8,7 +8,6 @@ import Mensagens from "./views/Mensagens.vue";
 import Busca from "./views/Busca.vue";
 import minhaConta from "./views/minhaConta.vue";
 import Dicas from "./views/Dicas.vue";
-import sobreNos from "./views/sobreNos.vue";
 
 Vue.use(Router);
 
