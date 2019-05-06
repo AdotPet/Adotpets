@@ -21,10 +21,3 @@ export default {
   name: "Carrousel"
 };
 </script>
-
-<style scoped>
-#banner {
-  background-image: url("http://www.harfordshelter.org/wp-content/uploads/2015/02/Adopt-a-Dog.jpg");
-}
-</style>
-
