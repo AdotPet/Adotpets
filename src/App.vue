@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <nav
-      class="flex items-center justify-between flex-wrap bg-indigo p-4 shadow"
+      class="flex items-center justify-between flex-wrap bg-indigo p-4 shadow vh-8"
     >
       <div class="flex items-center flex-no-shrink text-white mr-6">
         <router-link to="/">
@@ -155,5 +155,8 @@ export default {
 }
 img {
   object-fit: cover;
+}
+.vh-8 {
+  height: 8vh;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-indigo h-screen pb-6">
+  <div class="bg-indigo vh-92 pb-6">
     <div class="about bg-white">
       <div>
         <h1 class="bg-indigo text-white py-12">
@@ -90,5 +90,8 @@
   font-size: 30px;
   padding: 0 10px;
   border-radius: 20%;
+}
+.vh-92 {
+  height: 92vh;
 }
 </style>
