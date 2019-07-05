@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-white">
     <h1>Destaques</h1>
 
     <div class="container my-2 mx-auto px-4 md:px-12">
@@ -25,8 +25,7 @@
                 <a
                   :class="['no-underline', 'hover:underline', 'text-indigo']"
                   href="#"
-                >
-                  {{ pet.id }}</a
+                  >{{ pet.id }}</a
                 >
               </h1>
               <p class="text-grey-darker text-sm">{{ pet.life_span }}</p>
@@ -46,13 +45,13 @@
                 <span class="hidden">Like</span>
                 <ul class="list-reset flex mr-3">
                   <li>
-                    <i class="fas fa-heart ml-3 hover:text-red-dark"></i>
+                    <i class="fa fa-heart ml-3 hover:text-red-dark"></i>
                   </li>
                   <li>
-                    <i class="fas fa-share ml-3 hover:text-red-dark"></i>
+                    <i class="fa fa-share ml-3 hover:text-red-dark"></i>
                   </li>
                   <li>
-                    <i class="fas fa-ellipsis-h ml-3 hover:text-red-dark"></i>
+                    <i class="fa fa-ellipsis-h ml-3 hover:text-red-dark"></i>
                   </li>
                   <li></li>
                 </ul>
