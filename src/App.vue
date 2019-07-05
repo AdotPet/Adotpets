@@ -59,22 +59,26 @@
           <router-link
             to="/"
             class="block mt-4 lg:inline-block lg:mt-0 text-blue-dark no-underline bg-white rounded shadow p-2 hover:bg-blue-lighter hover:text-white mr-4"
+            @click.native="toggle"
           >
             <i class="fa fa-home"></i>
           </router-link>
           <router-link
             to="adotar"
             class="block mt-4 lg:inline-block lg:mt-0 text-blue-dark no-underline bg-white rounded shadow p-2 hover:bg-blue-lighter hover:text-white mr-4"
+            @click.native="toggle"
             >Quero adotar</router-link
           >
           <router-link
             to="doar"
             class="block mt-4 lg:inline-block lg:mt-0 text-blue-dark no-underline bg-white rounded shadow p-2 hover:bg-blue-lighter hover:text-white mr-4"
+            @click.native="toggle"
             >Quero doar</router-link
           >
           <router-link
             to="favoritos"
             class="block mt-4 lg:inline-block lg:mt-0 text-blue-dark no-underline bg-white rounded shadow p-2 hover:bg-blue-lighter hover:text-white mr-4"
+            @click.native="toggle"
             >Favoritos</router-link
           >
           <!-- <router-link
@@ -95,11 +99,13 @@
           <router-link
             to="dicas"
             class="block mt-4 lg:inline-block lg:mt-0 text-blue-dark no-underline bg-white rounded shadow p-2 hover:bg-blue-lighter hover:text-white mr-4"
+            @click.native="toggle"
             >Dicas</router-link
           >
           <router-link
             to="sobreNos"
             class="block mt-4 lg:inline-block lg:mt-0 text-blue-dark no-underline bg-white rounded shadow p-2 hover:bg-blue-lighter hover:text-white mr-4"
+            @click.native="toggle"
             >Sobre nós</router-link
           >
         </div>
@@ -107,6 +113,7 @@
           <router-link
             to="login"
             class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal hover:bg-white mt-4 lg:mt-0 no-underline pr-4"
+            @click.native="toggle"
           >
             <i class="fa fa-lock">
               <span class="pl-2">Entrar</span>
@@ -155,8 +162,5 @@ export default {
 }
 img {
   object-fit: cover;
-}
-.vh-8 {
-  height: 8vh;
 }
 </style>

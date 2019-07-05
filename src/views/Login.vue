@@ -8,7 +8,7 @@
         </h1>
         <div class="bg-indigo font-sans">
           <div class="flex justify-center">
-            <div class="w-3/5">
+            <div class="w-3/5 sm:3/5">
               <div
                 class="border-teal p-8 border-t-12 bg-white mb-6 rounded-lg shadow-lg"
               >
@@ -17,7 +17,8 @@
                     >Username or Email</label
                   >
                   <input
-                    type="text"
+                    v-model="email"
+                    type="email"
                     class="block appearance-none w-full bg-white border border-grey-light hover:border-grey px-2 py-2 rounded shadow"
                     placeholder="Your Username"
                   />
@@ -28,7 +29,8 @@
                     >Password</label
                   >
                   <input
-                    type="text"
+                    v-model="password"
+                    type="password"
                     class="block appearance-none w-full bg-white border border-grey-light hover:border-grey px-2 py-2 rounded shadow"
                     placeholder="Your Password"
                   />
@@ -57,6 +59,7 @@
 
                 <div class="flex items-center justify-center flex-col">
                   <button
+                    type="submit"
                     class="bg-teal-dark hover:bg-teal text-white font-bold py-2 px-12 rounded"
                   >
                     Login
@@ -84,6 +87,18 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      email: "",
+      password: "",
+      errors: {}
+    };
+  }
+};
+</script>
 
 <style scoped>
 .social-media {
