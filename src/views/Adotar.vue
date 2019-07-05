@@ -3,13 +3,15 @@
     <div class="about bg-white h-screen">
       <div>
         <h1 class="bg-indigo text-white py-4">
-          Busque por um novo amigo <br /><span class="text-xl"
+          Busque por um novo amigo
+          <br />
+          <span class="text-xl"
             >Você pode encontrar um novo amigo de forma simples</span
           >
         </h1>
 
         <div class="container my-2 mx-auto px-4 md:px-12 mt-6">
-          <form action="">
+          <form action>
             <input
               placeholder="O que deseja buscar?"
               class="pl-4 w-full bg-grey-lighter border-grey-light rounded py-2 mb-5 shadow"
@@ -64,17 +66,17 @@
                     <ul class="list-reset flex mr-3">
                       <li>
                         <i
-                          class="fas fa-heart ml-3 text-bg-indigo hover:text-red-dark"
+                          class="fa fa-heart ml-3 text-bg-indigo hover:text-red-dark"
                         ></i>
                       </li>
                       <li>
                         <i
-                          class="fas fa-share ml-3 text-bg-indigo hover:text-red-dark"
+                          class="fa fa-share ml-3 text-bg-indigo hover:text-red-dark"
                         ></i>
                       </li>
                       <li>
                         <i
-                          class="fas fa-ellipsis-h ml-3 text-bg-indigo hover:text-red-dark"
+                          class="fa fa-ellipsis-h ml-3 text-bg-indigo hover:text-red-dark"
                         ></i>
                       </li>
                       <li></li>
