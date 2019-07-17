@@ -1,16 +1,33 @@
 import Vue from "vue";
 import Router from "vue-router";
-import Home from "./views/Home.vue";
-import Doar from "./views/Doar.vue";
-import Adotar from "./views/Adotar.vue";
-import Favoritos from "./views/Favoritos.vue";
-import Mensagens from "./views/Mensagens.vue";
-import Busca from "./views/Busca.vue";
-import minhaConta from "./views/minhaConta.vue";
-import Dicas from "./views/Dicas.vue";
-import Login from "./views/Login.vue";
+import store from "../store";
+import Home from "../views/Home";
+import Doar from "../views/Doar.vue";
+import Adotar from "../views/Adotar.vue";
+import Favoritos from "../views/Favoritos.vue";
+import Mensagens from "../views/Mensagens.vue";
+import Busca from "../views/Busca.vue";
+import minhaConta from "../views/minhaConta.vue";
+import Dicas from "../views/Dicas.vue";
+import Login from "../views/Login.vue";
 
 Vue.use(Router);
+
+const ifNotAuthenticated = (to, from, next) => {
+  if (!localStorage.token) {
+    next();
+    return;
+  }
+  next("/MinhaConta");
+};
+
+const ifAuthenticated = (to, from, next) => {
+  if (localStorage.token) {
+    next();
+    return;
+  }
+  next("/login");
+};
 
 export default new Router({
   mode: "history",
@@ -49,7 +66,8 @@ export default new Router({
     {
       path: "/minhaConta",
       name: "minhaConta",
-      component: minhaConta
+      component: minhaConta,
+      beforeEnter: ifAuthenticated
     },
     {
       path: "/dicas",
@@ -59,7 +77,8 @@ export default new Router({
     {
       path: "/login",
       name: "login",
-      component: Login
+      component: Login,
+      beforeEnter: ifNotAuthenticated
     },
     {
       path: "/sobreNos",
@@ -68,7 +87,10 @@ export default new Router({
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () =>
-        import(/* webpackChunkName: "about" */ "./views/sobreNos.vue")
+        import(/* webpackChunkName: "about" */ "../views/sobreNos.vue")
     }
   ]
 });
+
+component: () =>
+  import(/* webpackChunkName: "about" */ "../views/sobreNos.vue");

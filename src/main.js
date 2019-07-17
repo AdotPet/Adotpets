@@ -1,10 +1,6 @@
 import Vue from "vue";
-import App from "./App.vue";
-import router from "./router";
-import "./registerServiceWorker";
-import { VueSlideoutPanel } from "vue2-slideout-panel";
-
-Vue.component("slideout-panel", VueSlideoutPanel);
+import App from "./App";
+import router from "./routes/index";
 
 // Import Tailwindcss
 import "@/assets/css/tailwind.css";
