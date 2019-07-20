@@ -1,19 +1,5 @@
 <template>
-  <div class="flex mb-4 justify-center">
-    <div
-      id="banner"
-      class="flex justify-center items-center w-full bg-indigo-dark bg-no-repeat h-32 font-bold bg-cover"
-    >
-      <ul class="list-reset text-white">
-        <li>
-          <h1>Adotpets</h1>
-        </li>
-        <li>
-          <h3>Plataforma de adoção de animais sem fins lucrativos</h3>
-        </li>
-      </ul>
-    </div>
-  </div>
+  <div class="my-4"></div>
 </template>
 
 <script>
@@ -21,3 +7,21 @@ export default {
   name: "Carrousel"
 };
 </script>
+
+<style scoped>
+#banner {
+  background-image: url("https://animalfoundation.com/application/files/6215/4937/1637/hero-home-dog.jpg");
+  background-size: cover;
+  background-blend-mode: normal;
+  background-position: 50% -103.8px;
+}
+
+@media screen and (max-width: 500px) {
+  h1,
+  h2,
+  h3 {
+    font-size: 16px;
+  }
+}
+</style>
+

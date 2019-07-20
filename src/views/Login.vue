@@ -86,7 +86,7 @@
 <script>
 import Joi from "joi";
 import axios from "axios";
-const LOGIN_URL = "http://localhost:3000/api/user/login";
+const LOGIN_URL = "https://adotpets.herokuapp.com/auth/local";
 const schema = Joi.object().keys({
   email: Joi.string()
     .email()
@@ -103,8 +103,8 @@ export default {
     errorMessage: "",
     loggingIn: false,
     user: {
-      email: "lucasleandro380@gmail.com",
-      password: "123456"
+      email: "",
+      password: ""
     }
   }),
   methods: {
@@ -113,13 +113,13 @@ export default {
       if (this.validUser()) {
         this.loggingIn = true;
         const body = {
-          email: this.user.email,
+          identifier: this.user.email,
           password: this.user.password
         };
         axios
           .post(LOGIN_URL, body)
           .then(result => {
-            const token = result.data.token;
+            const token = result.data.jwt;
             localStorage.setItem("token", token);
           })
           .then(result => {

@@ -10,6 +10,7 @@ import Busca from "../views/Busca.vue";
 import minhaConta from "../views/minhaConta.vue";
 import Dicas from "../views/Dicas.vue";
 import Login from "../views/Login.vue";
+import Description from "../views/Description";
 
 Vue.use(Router);
 
@@ -79,6 +80,10 @@ export default new Router({
       name: "login",
       component: Login,
       beforeEnter: ifNotAuthenticated
+    },
+    {
+      path: "/Description/",
+      name: "description"
     },
     {
       path: "/sobreNos",

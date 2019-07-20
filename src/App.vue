@@ -95,6 +95,17 @@
         </div>
         <div @click="toggleLoginPopup">
           <router-link
+            v-if="this.$route === '/MinhaConta'"
+            to="login"
+            class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal hover:bg-white mt-4 lg:mt-0 no-underline pr-4"
+            @click.native="toggle"
+          >
+            <i class="fa fa-lock">
+              <span class="pl-2">Logout</span>
+            </i>
+          </router-link>
+          <router-link
+            v-else
             to="login"
             class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal hover:bg-white mt-4 lg:mt-0 no-underline pr-4"
             @click.native="toggle"
@@ -119,8 +130,6 @@
 import { USER_REQUEST } from "./store/actions/user";
 import Axios from "axios";
 
-const API_URL = "http://localhost:3000/api/users/current";
-
 export default {
   name: "App",
   data() {
@@ -129,13 +138,7 @@ export default {
       toggleLogin: true
     };
   },
-  created: function() {
-    Axios.get(API_URL, {
-      Autorization: localStorage.token
-    }).then(response => {
-      console.log(response);
-    });
-  },
+
   methods: {
     toggle() {
       this.toggleMenu = !this.toggleMenu;
