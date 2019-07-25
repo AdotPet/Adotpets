@@ -16,16 +16,29 @@
               <img alt="Placeholder" class="block h-64 w-full" :src="pet.url" />
             </a>
 
-            <header class="flex items-center justify-between leading-tight p-2 md:p-4">
+            <header
+              class="flex items-center justify-between leading-tight p-2 md:p-4"
+            >
               <h1 class="text-lg">
-                <a class="no-underline hover:underline text-black" href="#">{{ pet.id }}</a>
+                <a class="no-underline hover:underline text-black" href="#">{{
+                  pet.id
+                }}</a>
               </h1>
               <p class="text-grey-darker text-sm">{{ pet.life_span }}</p>
             </header>
 
-            <footer class="flex items-center justify-between leading-none p-2 md:p-4">
-              <a class="flex items-center no-underline hover:underline text-black" href="#">
-                <img alt="Placeholder" class="block rounded-full w-8 h-8" :src="pet.url" />
+            <footer
+              class="flex items-center justify-between leading-none p-2 md:p-4"
+            >
+              <a
+                class="flex items-center no-underline hover:underline text-black"
+                href="#"
+              >
+                <img
+                  alt="Placeholder"
+                  class="block rounded-full w-8 h-8"
+                  :src="pet.url"
+                />
                 <p class="ml-2 text-sm">{{ pet.id }}</p>
               </a>
               <a class="no-underline text-grey-darker" href="#">

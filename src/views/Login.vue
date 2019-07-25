@@ -17,7 +17,7 @@
                     class="bg-red-lighter border border-red-400 text-red-700 px-4 py-3 rounded relative mb-4"
                     role="alert"
                   >
-                    <span class="block sm:inline">{{errorMessage}}</span>
+                    <span class="block sm:inline">{{ errorMessage }}</span>
                   </div>
                   <div class="pb-6">
                     <label class="font-bold text-grey-darker block pb-4">Usuário ou E-mail</label>

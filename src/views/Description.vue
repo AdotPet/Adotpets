@@ -1,5 +1,5 @@
 <template>
-  <div>{{animals.name}}</div>
+  <div>{{ animals.name }}</div>
 </template>
 
 <script>
@@ -28,4 +28,3 @@ export default {
   }
 };
 </script>
-

@@ -1,6 +1,5 @@
 import Vue from "vue";
 import Router from "vue-router";
-import store from "../store";
 import Home from "../views/Home";
 import Doar from "../views/Doar.vue";
 import Adotar from "../views/Adotar.vue";
@@ -83,7 +82,8 @@ export default new Router({
     },
     {
       path: "/Description/",
-      name: "description"
+      name: "description",
+      component: Description
     },
     {
       path: "/sobreNos",
@@ -96,6 +96,3 @@ export default new Router({
     }
   ]
 });
-
-component: () =>
-  import(/* webpackChunkName: "about" */ "../views/sobreNos.vue");

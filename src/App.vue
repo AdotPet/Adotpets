@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <nav class="flex items-center justify-between flex-wrap bg-indigo p-4 shadow vh-8">
+    <nav class="flex items-center justify-between flex-wrap bg-indigo-700 p-4 shadow vh-8">
       <div class="flex items-center flex-no-shrink text-white mr-6">
         <router-link to="/">
           <svg
@@ -31,7 +31,7 @@
       </div>
       <div class="block lg:hidden">
         <button
-          class="flex items-center px-3 py-2 border rounded text-teal-lighter border-teal-light hover:text-white hover:border-white"
+          class="flex items-center px-3 py-2 border rounded bordesecondary hover:text-white hover:border-white"
           @click="toggle"
         >
           <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -47,67 +47,42 @@
         <div class="text-sm lg:flex-grow">
           <router-link
             to="/"
-            class="block mt-4 lg:inline-block lg:mt-0 text-blue-dark no-underline bg-white rounded shadow p-2 hover:bg-blue-lighter hover:text-white mr-4"
+            class="block mt-4 lg:inline-block lg:mt-0 text-adotpets no-underline bg-white rounded shadow p-2 hover:bg-secondary hover:text-white mr-4"
             @click.native="toggle"
           >
             <i class="fa fa-home"></i>
           </router-link>
           <router-link
             to="adotar"
-            class="block mt-4 lg:inline-block lg:mt-0 text-blue-dark no-underline bg-white rounded shadow p-2 hover:bg-blue-lighter hover:text-white mr-4"
+            class="block mt-4 lg:inline-block lg:mt-0 text-adotpets no-underline bg-white rounded shadow p-2 hover:bg-secondary hover:text-white mr-4"
             @click.native="toggle"
           >Quero adotar</router-link>
           <router-link
             to="doar"
-            class="block mt-4 lg:inline-block lg:mt-0 text-blue-dark no-underline bg-white rounded shadow p-2 hover:bg-blue-lighter hover:text-white mr-4"
+            class="block mt-4 lg:inline-block lg:mt-0 text-adotpets no-underline bg-white rounded shadow p-2 hover:bg-secondary hover:text-white mr-4"
             @click.native="toggle"
           >Quero doar</router-link>
           <router-link
             to="favoritos"
-            class="block mt-4 lg:inline-block lg:mt-0 text-blue-dark no-underline bg-white rounded shadow p-2 hover:bg-blue-lighter hover:text-white mr-4"
+            class="block mt-4 lg:inline-block lg:mt-0 text-adotpets no-underline bg-white rounded shadow p-2 hover:bg-secondary hover:text-white mr-4"
             @click.native="toggle"
           >Favoritos</router-link>
-          <!-- <router-link
-            to="chat"
-            class="block mt-4 lg:inline-block lg:mt-0 text-blue-dark no-underline bg-white rounded shadow p-2 hover:bg-blue-lighter hover:text-white mr-4"
-            >Mensagens</router-link
-          >
-          <router-link
-            to="busca"
-            class="block mt-4 lg:inline-block lg:mt-0 text-blue-dark no-underline bg-white rounded shadow p-2 hover:bg-blue-lighter hover:text-white mr-4"
-            >Busca</router-link
-          >
-          <router-link
-            to="minhaConta"
-            class="block mt-4 lg:inline-block lg:mt-0 text-blue-dark no-underline bg-white rounded shadow p-2 hover:bg-blue-lighter hover:text-white mr-4"
-            >Minha conta</router-link
-          >-->
+
           <router-link
             to="dicas"
-            class="block mt-4 lg:inline-block lg:mt-0 text-blue-dark no-underline bg-white rounded shadow p-2 hover:bg-blue-lighter hover:text-white mr-4"
+            class="block mt-4 lg:inline-block lg:mt-0 text-adotpets no-underline bg-white rounded shadow p-2 hover:bg-secondary hover:text-white mr-4"
             @click.native="toggle"
           >Dicas</router-link>
           <router-link
             to="sobreNos"
-            class="block mt-4 lg:inline-block lg:mt-0 text-blue-dark no-underline bg-white rounded shadow p-2 hover:bg-blue-lighter hover:text-white mr-4"
+            class="block mt-4 lg:inline-block lg:mt-0 text-adotpets no-underline bg-white rounded shadow p-2 hover:bg-secondary hover:text-white mr-4"
             @click.native="toggle"
           >Sobre nós</router-link>
         </div>
         <div @click="toggleLoginPopup">
           <router-link
-            v-if="this.$route === '/MinhaConta'"
             to="login"
-            class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal hover:bg-white mt-4 lg:mt-0 no-underline pr-4"
-            @click.native="toggle"
-          >
-            <i class="fa fa-lock">
-              <span class="pl-2">Logout</span>
-            </i>
-          </router-link>
-          <router-link
-            v-else
-            to="login"
-            class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal hover:bg-white mt-4 lg:mt-0 no-underline pr-4"
+            class="bg-secondary inline-block text-sm px-4 py-2 leading-none shadow rounded text-white border-white hover:border-transparent hover:text-teal hover:bg-adotpets mt-4 lg:mt-0 no-underline pr-4"
             @click.native="toggle"
           >
             <i class="fa fa-lock">

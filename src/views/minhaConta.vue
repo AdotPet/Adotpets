@@ -13,7 +13,11 @@
         <article class="overflow-hidden rounded-lg shadow-lg hover:bg-indigo-lightest">
           <header class="flex items-center justify-between leading-tight p-2 md:p-4">
             <h1 class="text-lg">
-              <router-link :to="'/Description/' + pet.id">{{pet.name}}</router-link>
+              <router-link :to="'/Description/' + pet.id">
+                {{
+                pet.name
+                }}
+              </router-link>
             </h1>
             <p class="text-grey-darker text-sm">{{ pet.life_span }}</p>
           </header>
@@ -21,7 +25,9 @@
           <footer class="flex items-center justify-between leading-none p-2 md:p-4">
             <a class="flex items-center no-underline hover:underline text-black" href="#">
               <img class="block rounded-full w-8 h-8" :src="picture" />
-              <p class="ml-2 text-sm">{{ user.username }}</p>
+              <div v-for="(picture, index) in animals" :key="picture[index].pictures[0].url">
+                <p class="ml-2 text-sm">{{ picture.url }}</p>
+              </div>
             </a>
             <a class="no-underline text-grey-darker" href="#">
               <span class="hidden">Like</span>
@@ -39,7 +45,6 @@
                 </li>
               </ul>
             </a>
-            {{animals.status}}
           </footer>
         </article>
         <!-- END Article -->
@@ -59,7 +64,7 @@ export default {
   data: () => ({
     user: {},
     animals: {},
-    picture: ""
+    animal: {}
   }),
   mounted() {
     axios
@@ -69,12 +74,12 @@ export default {
         }
       })
       .then(res => {
-        console.log(res.data.animals);
-
         this.user = res.data;
+        console.log(res.data);
+
         this.animals = res.data.animals;
-        this.picture =
-          "http://localhost:1337" + res.data.animals[0].pictures[0].url;
+        console.log(this.animals);
+        console.log(res.data.animals.pictures[0].pictures[0].url);
       });
   }
 };

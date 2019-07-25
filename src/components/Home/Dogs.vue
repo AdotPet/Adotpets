@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-indigo-lightest p-4">
+  <div class="bg-indigo-100 p-4">
     <h1 class="pt-4">Cães</h1>
 
     <div class="container my-2 mx-auto px-4 md:px-12">
@@ -18,11 +18,7 @@
 
             <header class="flex items-center justify-between leading-tight p-2 md:p-4">
               <h1 class="text-lg">
-                <a class="no-underline hover:underline text-black" href="#">
-                  {{
-                  pet.id
-                  }}
-                </a>
+                <a class="no-underline hover:underline text-black" href="#">{{ pet.id }}</a>
               </h1>
               <p class="text-grey-darker text-sm">{{ pet.life_span }}</p>
             </header>
