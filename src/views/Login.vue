@@ -1,36 +1,36 @@
 <template>
   <form v-if="!loggingIn" @submit.prevent="login()">
-    <div class="bg-indigo vh-92 pb-6">
+    <div class="bg-indigo h-screen overflow-hidden pb-2">
       <div class="about bg-white">
         <div>
-          <h1 class="bg-indigo text-white py-12">
+          <h1 class="bg-indigo-500 text-white py-10">
             Área do membro
             <br />
           </h1>
 
-          <div class="bg-indigo font-sans">
+          <div class="bg-indigo-500 h-screen overflow-hidden font-sans">
             <div class="flex justify-center">
               <div class="w-3/5 sm:3/5">
                 <div class="border-teal p-8 border-t-12 bg-white mb-6 rounded-lg shadow-lg">
                   <div
                     v-if="errorMessage"
-                    class="bg-red-lighter border border-red-400 text-red-700 px-4 py-3 rounded relative mb-4"
+                    class="bg-red-200 border border-red-400 text-red-700 px-4 py-3 rounded relative mb-4"
                     role="alert"
                   >
                     <span class="block sm:inline">{{ errorMessage }}</span>
                   </div>
                   <div class="pb-6">
-                    <label class="font-bold text-grey-darker block pb-4">Usuário ou E-mail</label>
+                    <label class="font-bold text-grey-400 block pb-4">Usuário ou E-mail</label>
                     <input
                       v-model="user.email"
                       type="email"
-                      class="block appearance-none w-full bg-white border border-grey-light hover:border-grey px-2 py-2 rounded shadow"
+                      class="block appearance-none w-full bg-white border border-grey-200 hover:border-grey px-2 py-2 rounded shadow"
                       placeholder="Digite seu e-mail"
                     />
                   </div>
 
                   <div class="pb-6">
-                    <label class="font-bold text-grey-darker block pb-4">Senha</label>
+                    <label class="font-bold text-grey-400 block pb-4">Senha</label>
                     <input
                       v-model="user.password"
                       type="password"
@@ -38,25 +38,11 @@
                       placeholder="Digite sua senha"
                     />
                   </div>
-                  <div>
-                    <ul class="flex justify-center list-reset p-2">
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-facebook px-4 social-media text-blue" aria-hidden="true"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-twitter px-4 social-media text-blue" aria-hidden="true"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-
+                
                   <div class="flex items-center justify-center flex-col">
                     <button
                       type="submit"
-                      class="bg-teal-dark hover:bg-teal text-white font-bold py-2 px-12 rounded"
+                      class="bg-indigo-600 hover:bg-teal text-white font-bold p-2 py-2 px-32 rounded"
                     >Entrar</button>
 
                     <a
