@@ -13,7 +13,7 @@
           <!-- Article -->
           <article class="overflow-hidden rounded-lg shadow-lg">
             <a href="#">
-              <img alt="Placeholder" class="block h-64 w-full" :src="pet.url" />
+              <img alt="Placeholder" class="block h-64 w-full object-fill" :src="pet.url" />
             </a>
 
             <header

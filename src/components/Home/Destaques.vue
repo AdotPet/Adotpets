@@ -1,6 +1,8 @@
 <template>
   <div class="bg-white">
-    <h1>Destaques</h1>
+    <div class="container mx-auto">
+      <h1>Destaques</h1>
+    </div>
 
     <div class="container my-2 mx-auto px-4 md:px-12">
       <div class="flex flex-wrap -mx-1 lg:-mx-4">
@@ -13,7 +15,7 @@
           <!-- Article -->
           <article class="overflow-hidden rounded-lg shadow-lg hover:bg-grey-light">
             <a href="#">
-              <img class="block h-64 w-full" :src="pet.url" />
+              <img class="block h-64 w-full object-fill" :src="pet.url" />
             </a>
 
             <header class="flex items-center justify-between leading-tight p-2 md:p-4">
