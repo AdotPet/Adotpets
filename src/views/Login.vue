@@ -11,7 +11,9 @@
           <div class="bg-indigo-500 h-screen overflow-hidden font-sans">
             <div class="flex justify-center">
               <div class="w-3/5 sm:3/5">
-                <div class="border-teal p-8 border-t-12 bg-white mb-6 rounded-lg shadow-lg">
+                <div
+                  class="border-teal p-8 border-t-12 bg-white mb-6 rounded-lg shadow-lg"
+                >
                   <div
                     v-if="errorMessage"
                     class="bg-red-200 border border-red-400 text-red-700 px-4 py-3 rounded relative mb-4"
@@ -20,7 +22,9 @@
                     <span class="block sm:inline">{{ errorMessage }}</span>
                   </div>
                   <div class="pb-6">
-                    <label class="font-bold text-grey-400 block pb-4">Usuário ou E-mail</label>
+                    <label class="font-bold text-grey-400 block pb-4"
+                      >Usuário ou E-mail</label
+                    >
                     <input
                       v-model="user.email"
                       type="email"
@@ -30,7 +34,9 @@
                   </div>
 
                   <div class="pb-6">
-                    <label class="font-bold text-grey-400 block pb-4">Senha</label>
+                    <label class="font-bold text-grey-400 block pb-4"
+                      >Senha</label
+                    >
                     <input
                       v-model="user.password"
                       type="password"
@@ -38,26 +44,28 @@
                       placeholder="Digite sua senha"
                     />
                   </div>
-                
+
                   <div class="flex items-center justify-center flex-col">
                     <button
                       type="submit"
                       class="bg-indigo-600 hover:bg-teal text-white font-bold p-2 py-2 px-32 rounded"
-                    >Entrar</button>
+                    >
+                      Entrar
+                    </button>
 
                     <a
                       class="no-underline inline-block align-baseline font-bold text-sm text-blue hover:text-blue-dark float-right mt-4"
                       href="#"
-                    >Esqueceu sua senha?</a>
+                      >Esqueceu sua senha?</a
+                    >
                   </div>
                 </div>
                 <div class="text-center">
                   <p class="text-white text-sm">
                     Ainda não tem uma conta?
-                    <a
-                      href="#"
-                      class="no-underline text-teal-light font-bold"
-                    >Criar conta</a>.
+                    <a href="#" class="no-underline text-teal-light font-bold"
+                      >Criar conta</a
+                    >.
                   </p>
                 </div>
               </div>
@@ -108,7 +116,7 @@ export default {
             const token = result.data.jwt;
             localStorage.setItem("token", token);
           })
-          .then(result => {
+          .then(() => {
             setTimeout(() => {
               this.loggingIn = false;
               this.$router.push("/MinhaConta");

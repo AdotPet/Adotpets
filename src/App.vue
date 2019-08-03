@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <nav class="flex items-center justify-between flex-wrap bg-indigo-700 p-4 shadow vh-8">
+    <nav
+      class="flex items-center justify-between flex-wrap bg-indigo-700 p-4 shadow vh-8"
+    >
       <div class="flex items-center flex-no-shrink text-white mr-6">
         <router-link to="/">
           <svg
@@ -13,7 +15,12 @@
           >
             <rect width="85" height="30" fill="url(#pattern0)" />
             <defs>
-              <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+              <pattern
+                id="pattern0"
+                patternContentUnits="objectBoundingBox"
+                width="1"
+                height="1"
+              >
                 <use
                   xlink:href="#image0"
                   transform="translate(0 -0.000841751) scale(0.010101 0.0286195)"
@@ -34,7 +41,11 @@
           class="flex items-center px-3 py-2 border rounded bordesecondary hover:text-white hover:border-white"
           @click="toggle"
         >
-          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <svg
+            class="fill-current h-3 w-3"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <title>Menu</title>
             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
           </svg>
@@ -56,28 +67,33 @@
             to="adotar"
             class="block mt-4 lg:inline-block lg:mt-0 text-adotpets no-underline bg-white rounded shadow p-2 hover:bg-secondary hover:text-white mr-4"
             @click.native="toggle"
-          >Quero adotar</router-link>
+            >Quero adotar</router-link
+          >
           <router-link
             to="doar"
             class="block mt-4 lg:inline-block lg:mt-0 text-adotpets no-underline bg-white rounded shadow p-2 hover:bg-secondary hover:text-white mr-4"
             @click.native="toggle"
-          >Quero doar</router-link>
+            >Quero doar</router-link
+          >
           <router-link
             to="favoritos"
             class="block mt-4 lg:inline-block lg:mt-0 text-adotpets no-underline bg-white rounded shadow p-2 hover:bg-secondary hover:text-white mr-4"
             @click.native="toggle"
-          >Favoritos</router-link>
+            >Favoritos</router-link
+          >
 
           <router-link
             to="dicas"
             class="block mt-4 lg:inline-block lg:mt-0 text-adotpets no-underline bg-white rounded shadow p-2 hover:bg-secondary hover:text-white mr-4"
             @click.native="toggle"
-          >Dicas</router-link>
+            >Dicas</router-link
+          >
           <router-link
             to="sobreNos"
             class="block mt-4 lg:inline-block lg:mt-0 text-adotpets no-underline bg-white rounded shadow p-2 hover:bg-secondary hover:text-white mr-4"
             @click.native="toggle"
-          >Sobre nós</router-link>
+            >Sobre nós</router-link
+          >
         </div>
         <div @click="toggleLoginPopup">
           <router-link
@@ -102,9 +118,6 @@
 </template>
 
 <script>
-import { USER_REQUEST } from "./store/actions/user";
-import Axios from "axios";
-
 export default {
   name: "App",
   data() {
@@ -119,7 +132,6 @@ export default {
       this.toggleMenu = !this.toggleMenu;
     },
     toggleLoginPopup() {
-      console.log("Fui clicado");
       this.toggleLogin = !this.toggleLogin;
     }
   }
