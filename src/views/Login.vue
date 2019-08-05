@@ -63,8 +63,10 @@
                 <div class="text-center">
                   <p class="text-white text-sm">
                     Ainda não tem uma conta?
-                    <a href="#" class="no-underline text-teal-light font-bold"
-                      >Criar conta</a
+                    <router-link
+                      to="register"
+                      class="no-underline text-teal-light font-bold"
+                      >Criar conta</router-link
                     >.
                   </p>
                 </div>

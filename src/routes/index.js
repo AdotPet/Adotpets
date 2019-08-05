@@ -9,6 +9,7 @@ import Busca from "../views/Busca.vue";
 import minhaConta from "../views/minhaConta.vue";
 import Dicas from "../views/Dicas.vue";
 import Login from "../views/Login.vue";
+import Register from "../views/Register.vue";
 import Description from "../views/Description";
 
 Vue.use(Router);
@@ -31,7 +32,6 @@ const ifAuthenticated = (to, from, next) => {
 
 export default new Router({
   mode: "history",
-  base: process.env.BASE_URL,
   routes: [
     {
       path: "/",
@@ -64,8 +64,9 @@ export default new Router({
       component: Busca
     },
     {
-      path: "/minhaConta",
-      name: "minhaConta",
+      path: "/MinhaConta",
+      // a single route can define multiple named components
+      // which will be rendered into <router-view>s with corresponding names.
       component: minhaConta,
       beforeEnter: ifAuthenticated
     },
@@ -79,6 +80,11 @@ export default new Router({
       name: "login",
       component: Login,
       beforeEnter: ifNotAuthenticated
+    },
+    {
+      path: "/register",
+      name: "register",
+      component: Register
     },
     {
       path: "/Description/",
