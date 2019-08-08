@@ -41,7 +41,7 @@
       </div>
       <div class="w-1/3 w-full ">
         <h1>Router-view</h1>
-        <settings />
+        <div><settings /></div>
       </div>
     </div>
   </div>
