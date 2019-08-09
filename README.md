@@ -2,7 +2,7 @@
 
 ### Non-profit adoption platform
 
-![GitHub package.json version](https://img.shields.io/github/package-json/v/lucasleandrobr/releaseit?label=Version&logoColor=indigo) [![AppVersion-status](https://img.shields.io/badge/Status-beta%201-brightgreen.svg?style=flat)](https://github.com/delvedor/appversion?#status)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/AdotPet/Adotpets?label=Version&logoColor=indigo) [![AppVersion-status](https://img.shields.io/badge/Status-beta%201-brightgreen.svg?style=flat)](https://github.com/delvedor/appversion?#status)
 
 ## Our goals
 
