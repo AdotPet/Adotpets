@@ -1,4 +1,4 @@
-# ADOTPETS [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
+# ADOTPETS [![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
 
 `Non-profit adoption platform`
 
@@ -45,6 +45,7 @@ For this, I will be creating a dedicated area only to help the owners of lost an
     <td align="center"><a href="https://github.com/carlosevandro"><img src="https://avatars1.githubusercontent.com/u/33705727?v=4" width="100px;" alt="Carlos Evandro"/><br /><sub><b>Carlos Evandro</b></sub></a><br /><a href="#financial-carlosevandro" title="Financial">💵</a> <a href="#ideas-carlosevandro" title="Ideas, Planning, & Feedback">🤔</a></td>
     <td align="center"><a href="https://github.com/RaphaelOhlsen"><img src="https://avatars0.githubusercontent.com/u/30937914?v=4" width="100px;" alt="Raphael Bernardo Ohlsen"/><br /><sub><b>Raphael Bernardo Ohlsen</b></sub></a><br /><a href="#ideas-RaphaelOhlsen" title="Ideas, Planning, & Feedback">🤔</a></td>
     <td align="center"><a href="https://www.linkedin.com/in/cristianodealmeida/"><img src="https://avatars2.githubusercontent.com/u/25031107?v=4" width="100px;" alt="Cristiano de Almeida"/><br /><sub><b>Cristiano de Almeida</b></sub></a><br /><a href="#ideas-calmeidabr" title="Ideas, Planning, & Feedback">🤔</a></td>
+    <td align="center"><a href="https://github.com/GarciaDFE"><img src="https://avatars0.githubusercontent.com/u/43100363?v=4" width="100px;" alt="Marcial Garcia"/><br /><sub><b>Marcial Garcia</b></sub></a><br /><a href="#ideas-GarciaDFE" title="Ideas, Planning, & Feedback">🤔</a></td>
   </tr>
 </table>
 
