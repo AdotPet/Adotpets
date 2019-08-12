@@ -1,42 +1,41 @@
 {
-	"name": "adotpets",
-	"version": "0.1.38",
-	"private": true,
-	"scripts": {
-		"serve": "vue-cli-service serve",
-		"build": "vue-cli-service build",
-		"lint": "vue-cli-service lint",
-		"release": "release-it --no-npm.publish",
-		"contributors:add": "all-contributors add",
-		"contributors:generate": "all-contributors generate"
-	},
-	"dependencies": {
-		"axios": ">=0.19.0",
-		"core-js": "^3.2.0",
-		"joi": "^14.3.1",
-		"register-service-worker": "^1.6.2",
-		"vue": "^2.6.10",
-		"vue-router": "^3.1.2",
-		"vuex": "^3.1.1"
-	},
-	"devDependencies": {
-		"@vue/cli-plugin-babel": "^3.10.0",
-		"@vue/cli-plugin-eslint": "^3.10.0",
-		"@vue/cli-plugin-pwa": "^3.10.0",
-		"@vue/cli-service": "^3.10.0",
-		"@vue/eslint-config-prettier": "^5.0.0",
-		"all-contributors-cli": "^6.8.1",
-		"babel-eslint": "^10.0.2",
-		"eslint": "^6.1.0",
-		"eslint-config-prettier": "^6.0.0",
-		"eslint-plugin-prettier": "^3.1.0",
-		"eslint-plugin-vue": "^5.2.3",
-		"lodash": ">=4.17.15",
-		"node-sass": "^4.12.0",
-		"prettier": "^1.18.2",
-		"sass-loader": "^7.2.0",
-		"tailwindcss": "^1.1.0",
-		"vue-template-compiler": "^2.6.10",
-		"vue2-slideout-panel": "^2.2.3"
-	}
+  "name": "adotpets",
+  "version": "0.1.38",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "release": "release-it --no-npm.publish",
+    "contributors": "./node_modules/.bin/all-contributors"
+  },
+  "dependencies": {
+    "axios": ">=0.19.0",
+    "core-js": "^3.2.0",
+    "joi": "^14.3.1",
+    "register-service-worker": "^1.6.2",
+    "vue": "^2.6.10",
+    "vue-router": "^3.1.2",
+    "vuex": "^3.1.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.10.0",
+    "@vue/cli-plugin-eslint": "^3.10.0",
+    "@vue/cli-plugin-pwa": "^3.10.0",
+    "@vue/cli-service": "^3.10.0",
+    "@vue/eslint-config-prettier": "^5.0.0",
+    "all-contributors-cli": "^6.8.1",
+    "babel-eslint": "^10.0.2",
+    "eslint": "^6.1.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-vue": "^5.2.3",
+    "lodash": ">=4.17.15",
+    "node-sass": "^4.12.0",
+    "prettier": "^1.18.2",
+    "sass-loader": "^7.2.0",
+    "tailwindcss": "^1.1.0",
+    "vue-template-compiler": "^2.6.10",
+    "vue2-slideout-panel": "^2.2.3"
+  }
 }
