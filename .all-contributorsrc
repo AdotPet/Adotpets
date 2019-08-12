@@ -19,6 +19,16 @@
         "question",
         "code"
       ]
+    },
+    {
+      "login": "carlosevandro",
+      "name": "Carlos Evandro",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/33705727?v=4",
+      "profile": "https://github.com/carlosevandro",
+      "contributions": [
+        "financial",
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7

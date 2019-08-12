@@ -1,4 +1,4 @@
-# ADOTPETS [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+# ADOTPETS [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 
 `Non-profit adoption platform`
 
@@ -42,9 +42,10 @@ For this, I will be creating a dedicated area only to help the owners of lost an
 <table>
   <tr>
     <td align="center"><a href="https://github.com/Morette"><img src="https://avatars0.githubusercontent.com/u/20028647?v=4" width="100px;" alt="Morette"/><br /><sub><b>Morette</b></sub></a><br /><a href="#question-Morette" title="Answering Questions">💬</a> <a href="https://github.com/AdotPet/Adotpets/commits?author=Morette" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/carlosevandro"><img src="https://avatars1.githubusercontent.com/u/33705727?v=4" width="100px;" alt="Carlos Evandro"/><br /><sub><b>Carlos Evandro</b></sub></a><br /><a href="#financial-carlosevandro" title="Financial">💵</a> <a href="#ideas-carlosevandro" title="Ideas, Planning, & Feedback">🤔</a></td>
   </tr>
 </table>
+
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
-
 <!-- ALL-CONTRIBUTORS-LIST:END -->
