@@ -11,19 +11,6 @@
   "commitConvention": "none",
   "contributors": [
     {
-      "login": "LucasLeandroBR",
-      "name": "Lucas Leandro",
-      "avatar_url": "https://avatars1.githubusercontent.com/u/8397567?v=4",
-      "profile": "https://twitter.com/pannic12",
-      "contributions": [
-        "code",
-        "design",
-        "ideas",
-        "projectManagement",
-        "review"
-      ]
-    },
-    {
       "login": "Morette",
       "name": "Morette",
       "avatar_url": "https://avatars0.githubusercontent.com/u/20028647?v=4",

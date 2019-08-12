@@ -1,4 +1,4 @@
-# ADOTPETS [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+# ADOTPETS [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 
 `Non-profit adoption platform`
 
@@ -26,16 +26,32 @@ For this, I will be creating a dedicated area only to help the owners of lost an
 👏 Thanks goes to these wonderful people 🎉 <br>
 👏 His contribution made new animals find a family 🎉
 
+### Project Head 😻
+
+<table>
+  <tr>
+    <td align="center"><a href="https://twitter.com/pannic12"><img src="https://avatars1.githubusercontent.com/u/8397567?v=4" width="100px;" alt="Lucas Leandro"/><br /><sub><b>Lucas Leandro</b></sub></a><br /><a href="https://github.com/AdotPet/Adotpets/commits?author=LucasLeandroBR" title="Code">💻</a> <a href="#design-LucasLeandroBR" title="Design">🎨</a> <a href="#ideas-LucasLeandroBR" title="Ideas, Planning, & Feedback">🤔</a> <a href="#projectManagement-LucasLeandroBR" title="Project Management">📆</a> <a href="#review-LucasLeandroBR" title="Reviewed Pull Requests">👀</a></td>
+  </tr>
+</table>
+
+### Contributors 👏
+
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://twitter.com/pannic12"><img src="https://avatars1.githubusercontent.com/u/8397567?v=4" width="100px;" alt="Lucas Leandro"/><br /><sub><b>Lucas Leandro</b></sub></a><br /><a href="https://github.com/AdotPet/Adotpets/commits?author=LucasLeandroBR" title="Code">💻</a> <a href="#design-LucasLeandroBR" title="Design">🎨</a> <a href="#ideas-LucasLeandroBR" title="Ideas, Planning, & Feedback">🤔</a> <a href="#projectManagement-LucasLeandroBR" title="Project Management">📆</a> <a href="#review-LucasLeandroBR" title="Reviewed Pull Requests">👀</a></td>
     <td align="center"><a href="https://github.com/Morette"><img src="https://avatars0.githubusercontent.com/u/20028647?v=4" width="100px;" alt="Morette"/><br /><sub><b>Morette</b></sub></a><br /><a href="#question-Morette" title="Answering Questions">💬</a> <a href="https://github.com/AdotPet/Adotpets/commits?author=Morette" title="Code">💻</a></td>
   </tr>
 </table>
 
+<style>
+tr {
+  padding-right: 10px
+}
+</style>
+
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
