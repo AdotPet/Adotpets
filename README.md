@@ -2,8 +2,7 @@
 
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 `Non-profit adoption platform`
-
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-) ![GitHub package.json version](https://img.shields.io/github/package-json/v/AdotPet/Adotpets?label=Version&logoColor=indigo) [![AppVersion-status](https://img.shields.io/badge/Status-beta%201-brightgreen.svg?style=flat)](https://github.com/delvedor/appversion?#status)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/AdotPet/Adotpets?label=Version&logoColor=indigo) [![AppVersion-status](https://img.shields.io/badge/Status-beta%201-brightgreen.svg?style=flat)](https://github.com/delvedor/appversion?#status)
 
 ## Our goals
 
@@ -39,4 +38,5 @@ For this, I will be creating a dedicated area only to help the owners of lost an
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
