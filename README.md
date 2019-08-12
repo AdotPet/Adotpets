@@ -1,7 +1,7 @@
-# ADOTPETS
+# ADOTPETS [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 `Non-profit adoption platform`
+
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/AdotPet/Adotpets?label=Version&logoColor=indigo) [![AppVersion-status](https://img.shields.io/badge/Status-beta%201-brightgreen.svg?style=flat)](https://github.com/delvedor/appversion?#status)
 
 ## Our goals
