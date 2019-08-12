@@ -8,7 +8,7 @@
   ],
   "imageSize": 100,
   "commit": true,
-  "commitConvention": "eslint",
+  "commitConvention": "none",
   "contributors": [
     {
       "login": "LucasLeandroBR",
@@ -18,16 +18,6 @@
       "contributions": [
         "code",
         "design"
-      ]
-    },
-    {
-      "login": "Morette",
-      "name": "Morette",
-      "avatar_url": "https://avatars0.githubusercontent.com/u/20028647?v=4",
-      "profile": "https://github.com/Morette",
-      "contributions": [
-        "code",
-        "question"
       ]
     }
   ],
