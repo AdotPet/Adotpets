@@ -1,7 +1,7 @@
 # ADOTPETS 
 ```Non-profit adoption platform```
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-) ![GitHub package.json version](https://img.shields.io/github/package-json/v/AdotPet/Adotpets?label=Version&logoColor=indigo) [![AppVersion-status](https://img.shields.io/badge/Status-beta%201-brightgreen.svg?style=flat)](https://github.com/delvedor/appversion?#status)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-) ![GitHub package.json version](https://img.shields.io/github/package-json/v/AdotPet/Adotpets?label=Version&logoColor=indigo) [![AppVersion-status](https://img.shields.io/badge/Status-beta%201-brightgreen.svg?style=flat)](https://github.com/delvedor/appversion?#status)
 
 ## Our goals
 
@@ -32,6 +32,7 @@ For this, I will be creating a dedicated area only to help the owners of lost an
 <table>
   <tr>
     <td align="center"><a href="https://twitter.com/pannic12"><img src="https://avatars1.githubusercontent.com/u/8397567?v=4" width="100px;" alt="Lucas Leandro"/><br /><sub><b>Lucas Leandro</b></sub></a><br /><a href="https://github.com/AdotPet/Adotpets/commits?author=LucasLeandroBR" title="Code">💻</a> <a href="#design-LucasLeandroBR" title="Design">🎨</a></td>
+    <td align="center"><a href="https://github.com/Morette"><img src="https://avatars0.githubusercontent.com/u/20028647?v=4" width="100px;" alt="Morette"/><br /><sub><b>Morette</b></sub></a><br /><a href="https://github.com/AdotPet/Adotpets/commits?author=Morette" title="Code">💻</a></td>
   </tr>
 </table>
 
